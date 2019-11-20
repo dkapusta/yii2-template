@@ -7,6 +7,10 @@ return [
 
     'defaultRoute' => 'common/index',
 
+    'components' => [
+        'db' => require(__DIR__ . '/com/db.php'),
+    ],
+
     'aliases' => require(__DIR__ . '/com/aliases.php'),
     'params' => require(__DIR__ . '/params.php'),
 ];
